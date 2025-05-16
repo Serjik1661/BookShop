@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мини-Магазин</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <ul class="nav-items">
+                    <div class="logo">
+                        <img class="logo-img" src="./img/логотип.jpg" alt="Библиори">
+                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="cart-link">
+                            <img class="cart-icon" src="./img/корзина2.jpg" alt="Корзина покупок">
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <div class="container">
+        <div class="cards">
+            <div class="card" data-id="1">
+                <img class="cardImgBook" src="./img/Мураками-Токийские легенды.webp" width="100px" height="100px" alt="Мураками. Токийские легенды">
+                <div class="containerInfoCard">
+                    <p class="author">Мураками</p>
+                    <p class="nameBook">Токийские легенды</p>
+                </div>
+                <div class="containerPrice">
+                    <p class="price">1399 Рублей</p>
+                </div>
+                <button class="btn">В корзину</button>
+            </div>
+
+            <div class="card" data-id="2">
+                <img class="cardImgBook" src="./img/Мураками-Токийские легенды.webp" width="100px" height="100px" alt="Мураками. Токийский Йокаи">
+                <div class="containerInfoCard">
+                    <p class="author">Мураками</p>
+                    <p class="nameBook">Токийские Йокаи</p>
+                </div>
+                <div class="containerPrice">
+                    <p class="price">1399 Рублей</p>
+                </div>
+                <button class="btn">В корзину</button>
+            </div>
+        </div>
+        <div class="cart-container">
+            <h2>Корзина</h2>
+            <div id="cart-items"></div>
+            <div class="cart-total">
+            Итого: <span id="total">0</span> руб
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
